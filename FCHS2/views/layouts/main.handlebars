@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Fox Creek High School</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet" />
+	<script>
+		function myFunction() {
+			var x = document.getElementById("nav");
+			if (x.className === "nav") {
+				x.className += " responsive";
+			} else {
+				x.className = "nav";
+			}
+		}
+	</script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+	<div class="nav" id="nav">
+		<img src="img/fchslogo.png" alt="logo" id="logo">
+		<ul id="nav-list">
+			<li>
+				<a href="home.handlebars">Home</li>
+			<li>
+				<a href="quick_links.handlebars">Quick Links</a>
+			</li>
+			<li>
+				<a href="our_school.handlebars">Our School</a>
+			</li>
+			<li>
+				<a href="academics.handlebars">Academics</a>
+			</li>
+			<li>
+				<a href="#">Guidance</a>
+				<ul id="submenu">
+					<li>
+						<a href="https://docs.google.com/forms/d/1Zbpt9veGByPq8X0rx3vC0B9eiuPW6nh7B1qMrvHk6lo/viewform?ts=59e502a7&edit_requested=true">Prospective Student Information</a>
+					</li>
+					<li>
+						<a href="https://drive.google.com/drive/folders/0B8p7PPc6k9jlb2dPd3dTay0yVDA?usp=sharing">Senior Parent Night 2017</a>
+					</li>
+					<li>
+						<a href="https://docs.wixstatic.com/ugd/e9eb13_ef23ae241f644220b9ea8995d92c8ec4.pdf">Course Request</a>
+					</li>
+					<li>
+						<a href="https://docs.wixstatic.com/ugd/e9eb13_10d3d481398645cf888feab1a7aa30d4.pdf">Dual Enrollment Checklist</a>
+					</li>
+					<li>
+						<a href="https://docs.wixstatic.com/ugd/e9eb13_227a5174152942bca4d30af34b56b9f8.pdf">Ten Point Grading Scale</a>
+					</li>
+					<li>
+						<a href="https://drive.google.com/file/d/0B8p7PPc6k9jlVEdUNXhoXzZBQ2c/view">Graduation information</a>
+					</li>
+					<li>
+						<a href="/Users/shayarsenault/Desktop/Dev/WD/FCHS/html/internal/grad_reqs.html">Graduation requirements</a>
+					</li>
+					<li>
+						<a href="https://docs.wixstatic.com/ugd/e9eb13_6cd953206b0841209ea07aa1e58c670c.pdf">Financial Aid information</a>
+					</li>
+					<li>
+						<a href="/Users/shayarsenault/Downloads/Senior Newsletter-October 2017.docx" download>Senior News</a>
+					</li>
+					<li>
+						<a href="https://drive.google.com/file/d/0B8p7PPc6k9jlaWdNNDRtMDI1aHc/view">Senior Calendar</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="https://foxcreekathletics.com/">Athletics</a>
+			</li>
+			<li>
+				<a href="contact.handlebars">Contact</a>
+			</li>
+			<li>
+				<a href="login.handlebars">Login</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+			</li>
+		</ul>
+	</div>
+    {{{body}}}
+</body>
+</html>

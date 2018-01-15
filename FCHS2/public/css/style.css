@@ -1,0 +1,667 @@
+body{
+	padding:0;
+	margin:0;
+	height:100%;
+	background-color:#d9d9d9;
+}
+/* HOME */
+/* Navigation */
+#nav{
+	height:100%;
+	margin:0;
+	padding:0;
+	text-align: right;
+	position: relative;
+	background: red;
+	border-bottom: #000000 3px solid
+}
+#logo{
+	top: -13px;
+	left: 10px;
+	margin:0;
+	padding-top:0;
+	position: relative;
+	float: left;
+}
+
+#nav-list{
+	top: 9px;
+	 list-style-type: none;
+	 padding: 0;
+	 margin: 0;
+	 position: relative;
+	 min-width: 200px;
+}
+#nav-list li{
+	top: 7px;
+	font-family: "Abel", sans-serif;
+	font-size: 1.13em;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #ffffff;
+	display:inline-block;
+	list-style: none;
+  	margin: 0 0 20px 0;
+  	padding: 0 20px 0 20px;
+}
+#nav-list a{
+	color: #ffffff;
+	text-decoration: none;
+	transition: all .2s ease-in-out;
+}
+#nav-list a:hover{
+	color: #000000;
+	transform: scale(1.1);
+}
+#nav ul li:hover ul {
+    display: block;
+}
+#nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    border: 5px solid #222;
+	font-size: .75em;
+	font-family: "Abel", sans-serif;
+	z-index: 999;
+}
+#nav ul ul li {
+  display: block;
+	z-index: 999;
+}
+#nav ul ul li a:hover {
+    color: red;
+}
+
+
+/* End of Navigation */
+/* News */
+
+#fb{
+	float:right;
+	padding:20px;
+}
+.news{
+	margin: 1% 30% 0 30%;
+	background-color: #ffffff;
+  border: 2px solid black;
+}
+.articles p{
+	font-family: "Abel", sans-serif;
+	font-size:1.1em;
+	padding: 10px;
+}
+.articles h3{
+	font-family: "Abel", sans-serif;
+	font-size: 1.3em;
+	text-align: left;
+	padding-left: 13px;
+	color: red;
+
+}
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+
+
+
+
+
+/* QUICK LINKS */
+#links{
+	height: 100%;
+	width: 100%;
+	padding-top: 10px;
+	margin-left: 1em;
+	margin-right: 1em;
+
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#links section{
+	height: 21vh;
+	width: 20vw;
+	border: 2px solid black;
+	border-radius: 5px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-color: #a9a9a9;
+}
+#links div{
+	height: 20vh;
+	width: 20vw;
+	padding: 2%;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+	display:inline-block;
+	margin: auto;
+}
+
+.section .headers, .description{
+	opacity: 0;
+	font-family: "Abel", sans-serif;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	transition: opacity .5s linear;
+}
+
+.headers{
+	font-size: 1.6em;
+}
+.descriptions{
+	font-size: 1.2em;
+}
+
+#pwrschool .section{
+	background-image: url('/img/powerschool-logo.png');
+}
+#powerschool-link{
+	text-decoration: none;
+}
+
+#pwrteacher .section{
+	background-image: url('/img/powerteacher.png');
+}
+
+#clubs .section{
+	background-image: url('/img/clubs.png');
+}
+
+#press .section{
+	background-image: url('/img/press.png');
+}
+
+
+#rencrew .section{
+	background-image: url('/img/rencrew.png');
+}
+
+#cal .section{
+	background-image: url('/img/calendar.png');
+}
+
+#bells .section{
+	background-image: url('/img/bell.png');
+}
+
+#tchr .section{
+	background-image: url('/img/teachers.png');
+}
+
+.section:hover .headers, .section:hover .description{
+	opacity: 1;
+	transition: opacity .5s linear;
+}
+
+/* BELL SCHEDULE CSS */
+#bell h1{
+	text-align: center;
+	font-family: "Abel", sans-serif;
+	font-size: 1.4em;
+	color: red;
+	font-weight: bold;
+}
+#bell p{
+	text-align: center;
+	font-family: "Abel", sans-serif;
+	font-size: 1em;
+	color: red;
+	font-weight: bold;
+}
+#bell-hr{
+	display: block;
+	height: 1px;
+	width:50%;
+	border: 0;
+	border-top: 1px solid #000;
+	margin: auto;
+	padding: 0;
+}
+
+/* OUR SCHOOL CSS */
+#staffdir .section{
+	background-image: url('/img/staff.png');
+}
+
+#boarddir .section{
+	background-image: url('/img/board.png');
+}
+
+#jobs .section{
+	background-image: url('/img/jobs.png');
+}
+
+#ptca .section{
+	background-image: url('/img/ptca.png');
+}
+
+#toty .section{
+	background-image: url('/img/toty.png');
+}
+
+/* STAFF DIRECTORY CSS */
+#header {
+	display: flex;
+	margin:0;
+	padding:0;
+	top: 0;
+	height:10em;
+	background-color: #000;
+	border-bottom: 3px solid red;
+	text-align: center;
+}
+#center{
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 1em;
+}
+#subjects{
+	list-style: none;
+	display: inline;
+	overflow: hidden;
+	position: static;
+}
+#subjects li{
+	display: inline;
+	padding: 1em;
+}
+#sub-links{
+	display: inline-block;
+	color: red;
+	text-transform: uppercase;
+	font-family: "Abel", sans-serif;
+	font-size: 1em;
+	text-decoration: none;
+	transition: all .2s ease-in-out;
+}
+#sub-links:hover{
+	color: #fff;
+	font-size: 1.05em;
+	transform: scale(1.1);
+}
+
+
+#header h2{
+	color: red;
+	text-transform: uppercase;
+	font-family: "Abel", sans-serif;
+}
+
+#photo-div{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#photo-div section{
+	display: flex;
+	background-image: url("/img/press.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	height: 40vh;
+}
+
+#photo-div p{
+	color: #000;
+	text-transform: uppercase;
+	font-family: "Abel", sans-serif;
+	font-size: 1em;
+	text-decoration: none;
+}
+
+#title-div{
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+#title{
+	color: red;
+	padding-top: 2.5%;
+	font-family: "Abel", sans-serif;
+	text-align: center;
+	width:100%;
+	border-bottom: 3px solid #000;
+  line-height: 0.1em;
+	text-transform: uppercase;
+}
+
+#title span{
+	background: #d9d9d9;
+  padding:0 10px;
+}
+
+.pictures{
+	display: grid;
+	grid-template-columns: repeat(5, 90px);
+	grid-gap: 1em;
+	justify-content: center;
+}
+.pictures > div{
+	background-color: #a9a9;
+	text-align: center;
+}
+.align-english > div{
+	background-color: #a9a9;
+	text-align: center;
+}
+.align-english{
+	padding-top: 1em;
+	display: grid;
+	grid-template-columns: repeat(2, 90px);
+	grid-gap: 1em;
+	justify-content: center;
+}
+
+.align-history > div{
+	background-color: #a9a9;
+	text-align: center;
+}
+.align-history{
+	padding-top: 1em;
+	display: grid;
+	grid-template-columns: repeat(3, 90px);
+	grid-gap: 1em;
+	justify-content: center;
+}
+
+
+/* BOD CSS */
+
+#bod-title{
+	text-align: center;
+	font-family: "Abel", sans-serif;
+	color: red;
+	width: 100%;
+	border-bottom: 3px solid #000;
+  line-height: 0.1em;
+}
+#dir-title{
+	color: red;
+}
+#names{
+	text-align: center;
+	font-family: "Abel", sans-serif;
+	font-size: 1.1em;
+}
+#bod-title span{
+	background: #d9d9d9;
+  	padding:0 10px;
+}
+#main{
+	text-align: center;
+}
+#main div{
+	margin-left: 30%;
+	margin-right: 30%;
+}
+#docs{
+	margin-top: 2em;
+	text-align: center;
+	display: inline;
+}
+#docs ul{
+	list-style: none;
+}
+#downloads a{
+	text-decoration: none;
+	color: red;
+	font-size: 1.4em;
+}
+#downloads{
+	font-family: "Abel", sans-serif;
+}
+#board-div{
+	margin-left: 40%;
+	margin-right: 40%;
+}
+#board-hr{
+	display: block;
+	height: 1px;
+	width: 25%;
+	border: 0;
+	border-top: 3px solid #000;
+	margin: 1em 0;
+	padding: 0;
+}
+
+#dates h1{
+	font-family: "Abel", sans-serif;
+	color: red;
+	text-align: center;
+}
+#dates p{
+	text-align: center;
+	font-family: "Abel", sans-serif;
+	color: #000;
+}
+
+
+/* CAREERS CSS */
+#job-title{
+	text-align: center;
+	font-family: "Abel", sans-serif;
+	color: red;
+}
+#sub-title{
+	text-align: center;
+	font-family: "Abel", sans-serif;
+}
+#sub-title a{
+	color: red;
+	text-decoration: none;
+}
+#description{
+	text-align: center;
+	font-family: "Abel", sans-serif;
+	font-size: 1.3em;
+}
+
+
+/* PTCA CSS */
+#ptca-title{
+	text-align: center;
+	font-family: "Abel", sans-serif;
+	color: red;
+}
+#ptca-desc{
+	text-align: center;
+	font-family: "Abel", sans-serif;
+	font-size: 1.2em;
+}
+#ptca-desc span{
+	color: red;
+}
+#bl-link{
+	text-align: center;
+	font-family: "Abel", sans-serif;
+}
+#bl-link a{
+	text-decoration: none;
+	color: red;
+}
+
+#toty-title{
+	text-align: center;
+	font-family: "Abel", sans-serif;
+	text-transform: uppercase;
+	color: red;
+}
+
+
+#aca-div{
+	height: 100%;
+	width: 100%;
+	padding-top: 10px;
+	margin-left: 1em;
+	margin-right: 1em;
+
+	display:flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+#aca-div section{
+	height: 21vh;
+	width: 20vw;
+	border: 2px solid black;
+	border-radius: 5px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-color: #a9a9a9;
+}
+#aca-div > div{
+	margin-left: 2em;
+}
+
+
+
+#childfind .section{
+	background-image: url('/img/childfind.png');
+}
+
+#courses .section{
+	background-image: url('/img/course.png');
+}
+
+#music .section{
+	background-image: url('/img/music.png');
+}
+
+#satschool .section{
+	background-image: url('/img/satschool.png');
+}
+
+.cfdiv > h1, .cfdiv > p{
+	text-align: center;
+	font-family: 'Abel', sans-serif;
+	text-transform:uppercase;
+}
+.cfdiv h1{
+	font-size: 1.2em;
+	color:red;
+}
+.cfdiv p{
+	font-size: .8em;
+}
+
+#reqs h1, h2{
+	font-family: 'Abel', sans-serif;
+	text-transform:uppercase;
+	color:red;
+	text-align:center;
+}
+#reqs p{
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Abel", sans-serif;
+}
+#reqs span{
+	color: red;
+	font-weight: bold;
+}
+
+#contact > iframe{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#contact > h2,h3{
+	text-align: center;
+
+	text-transform: uppercase;
+	font-family: "Abel", sans-serif;
+	color: red;
+}
+
+#login-body{
+	background-color: #000f;
+}
+
+
+.container{
+	height: 100%;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+.container h1, .container h3, form{
+	text-align: center;
+	padding: 0;
+	text-transform: uppercase;
+	font-family: "Abel", sans-serif;
+	color: red;
+}
+.container button{
+	color:#fff;
+	position: relative;
+	top: 10px;
+	left: 37%;
+	border: 2px solid red;
+	border-radius: 1px;
+	background-color: #000;
+
+	font-family: "Abel", sans-serif;
+	font-size: 13px;
+	text-transform: uppercase;
+
+	height: 3em;
+	width:6em;
+
+	transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: linear;
+}
+.container button:hover{
+	color:red;
+	border: 2px solid #fff;
+	border-radius: 4px;
+}
+
+
+/* RESPONSIVE NAVBAR CSS */
+.nav .icon{
+	display: none;
+}
+.icon{
+	font-size: 1.5em;
+}
+@media screen and (max-width: 600px) {
+  .nav a{display: none;}
+  .nav a.icon {
+    float: right;
+    display: block;
+		padding: 0 2% 0 0;
+  }
+}
+
+/* The "responsive" class is added to the nav with JavaScript when the user clicks on the icon. This class makes the nav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .nav.responsive {position: relative;}
+  .nav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+#calendar h1{
+	font-family: "Abel", sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+}
